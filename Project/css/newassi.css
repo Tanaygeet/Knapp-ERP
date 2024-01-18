@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&family=Poppins:wght@200;400&family=Risque&family=Roboto&display=swap');
+
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: poly;
+}
+
+*::selection {
+    background: #44534757;
+    color     : #00E0FF;
+}
+
+*::-webkit-scrollbar {
+    background   : transparent;
+    width        : 0.5rem;
+    border-radius: 2rem;
+    height       : 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background   : #505458;
+    border-radius: 2rem;
+}
+
+.main {
+    padding        : 2%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.main .assignmentForm {
+    display        : flex;
+    justify-content: space-evenly;
+    flex-direction : column;
+    align-items    : center;
+    background     : #EEFAFF;
+    border         : 1px solid #000000;
+    box-sizing     : border-box;
+    border-radius  : 5vh;
+    width          : 100%;
+    padding        : 1% 4%;
+}
+
+.main .assignmentForm span {
+    display              : grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content      : space-around;
+    width                : 100%;
+    line-height          : 5vh;
+}
+
+.main .assignmentForm span input,
+.main .assignmentForm span select {
+    background   : #FFFFFF;
+    border       : 1px solid #003F63;
+    box-sizing   : border-box;
+    border-radius: 9px;
+    width        : 15vh;
+    padding      : 1%;
+}
+
+.main .assignmentForm textarea {
+    background   : #FFFFFF;
+    border       : 10px solid rgba(0, 63, 99, 0.68);
+    box-sizing   : border-box;
+    border-radius: 31px;
+    width        : 100%;
+    height       : 60vh;
+    padding      : 2%;
+    margin       : 1% auto;
+    resize       : none;
+    overflow     : auto;
+}
+
+.main .assignmentForm .questions {
+    background   : #FFFFFF;
+    border       : 1px solid #000000;
+    box-sizing   : border-box;
+    border-radius: 31px;
+    width        : 100%;
+    height       : 75vh;
+    padding      : 2%;
+    margin       : 1% auto;
+    resize       : none;
+    overflow     : auto;
+}
+
+.main .assignmentForm button {
+    background   : #FFFFFF;
+    border       : 3px solid #003F63;
+    box-sizing   : border-box;
+    border-radius: 2vh;
+    padding      : 1% 5%;
+    cursor       : pointer;
+    transition   : 0.2s;
+}
+
+.main .assignmentForm button:hover {
+    transition: 0.2s;
+    transform : scale(0.9);
+}
+
+@media screen and (max-width: 1002px) {
+    .main .assignmentForm span {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .main .assignmentForm span {
+        grid-template-columns: auto auto;
+    }
+
+    .main .assignmentForm textarea {
+        padding: 5%;
+    }
+
+    .main .assignmentForm .questions {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .main .assignmentForm span {
+        grid-template-columns: auto;
+        justify-content      : space-evenly;
+    }
+}

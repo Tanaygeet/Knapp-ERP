@@ -1,0 +1,134 @@
+#lateFee {
+    position     : fixed;
+    right        : 0;
+    top          : 22%;
+    z-index      : 3;
+    background   : rgba(87, 84, 84, 0.548);
+    border-radius: 2vh;
+    padding      : 1%;
+    border       : solid #F7F7F7;
+    cursor       : grab;
+    box-shadow   : 0 0.5vh 1vh #003F63;
+    transition   : 0.2s;
+}
+
+#lateFee form {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+#lateFee button {
+    background: transparent;
+    border    : none;
+    font-size : large;
+    color     : #F7F7F7;
+    cursor    : pointer;
+    transition: 0.2s;
+}
+
+#lateFee button:hover {
+    transition : 0.2s;
+    text-shadow: 0.2vh 0.5vh 0.3vh rgb(50, 23, 168);
+}
+
+#lateFee #lInp {
+    display      : none;
+    min-width    : 10vh;
+    width        : fit-content;
+    max-width    : 15vh;
+    background   : #FFFFFF;
+    border       : 1px solid #003F63;
+    box-sizing   : border-box;
+    border-radius: 9px;
+    line-height  : 20px;
+    padding      : 0.5%;
+    margin-block : 1vh;
+}
+
+
+#lateFee:hover {
+    transition: 0.2s;
+    box-shadow: 0 1vh 1.5vh #003f63ac;
+    transform : translateY(-5px);
+}
+
+.showContainer .allotForm .tableForm {
+    border    : none;
+    background: transparent;
+}
+
+.showContainer .allotForm .allotment {
+    display              : grid;
+    grid-gap             : 1%;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.showContainer .allotForm .allotment label {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    color          : #003F63;
+}
+
+.showContainer .allotForm .allotment .field {
+    min-width    : 10vh;
+    width        : fit-content;
+    max-width    : 15vh;
+    background   : #FFFFFF;
+    border       : 1px solid #003F63;
+    box-sizing   : border-box;
+    border-radius: 9px;
+    line-height  : 20px;
+    padding      : 0.5%;
+}
+
+.showContainer .allotForm button {
+    background   : rgba(0, 63, 99, 0.71);
+    border-radius: 30px;
+    color        : #fff;
+    border       : 1px solid #000000;
+    box-sizing   : border-box;
+    padding      : 1% 5%;
+    font-size    : x-large;
+    cursor       : pointer;
+    transition   : 0.2s;
+}
+
+.showContainer .allotForm button:hover {
+    transition: 0.2s;
+    box-shadow: 0.1vh 0.5vh 0.9vh 0.1vh #00000051;
+    transform : scale(0.9);
+}
+
+.showContainer .allotForm .tableForm .serial {
+    background: #F7F7F7;
+}
+
+@media screen and (max-width: 1124px) {
+    .showContainer .allotForm .allotment {
+        grid-template-columns: auto auto auto;
+        grid-gap             : 10% 2%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .showContainer .allotForm .allotment {
+        grid-template-columns: auto auto;
+        grid-gap             : 10% 2%;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .showContainer .allotForm .allotment {
+        display       : flex;
+        flex-direction: column;
+        width         : fit-content;
+    }
+
+    .showContainer .allotForm .allotment .field {
+        margin-block: 2%;
+    }
+}

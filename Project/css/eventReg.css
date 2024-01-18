@@ -1,0 +1,208 @@
+.stdReg {
+    background           : url("https://source.unsplash.com/random/?crackers,holi,dipawali,dj,valentinesday,pongal,rakshabandhan,collegeevents,games,ai,3dgame");
+    background-size      : cover;
+    background-position  : right;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+}
+
+.main {
+    display: block;
+}
+
+.h2 {
+    color      : #016484 !important;
+    font-weight: lighter;
+}
+
+.tableContainer {
+    margin       : auto;
+    position     : relative;
+    top          : 2vh;
+    left         : 1vh;
+    border-radius: 5px;
+    padding      : 3vh;
+    overflow     : auto;
+}
+
+.tableContainer .headText {
+    font-style : normal;
+    font-weight: 400;
+    font-size  : x-large;
+    line-height: 36px;
+    color      : #003F63;
+    text-align : start;
+}
+
+.tableContainer .table {
+    padding: 2vh;
+    width  : 100%;
+    cursor : pointer;
+}
+
+.tableContainer .table th {
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : large;
+    min-width    : max-content;
+    line-height  : 30px;
+    background   : #EAECEF;
+    border       : 1px solid #000000;
+    box-sizing   : border-box;
+    border-radius: 10px;
+    text-align   : center;
+    padding      : 0.3% 1%;
+}
+
+.tableContainer .table td {
+    background   : #F7F7F7;
+    border       : 1px solid #000000;
+    color        : #555151;
+    min-width    : 19vh;
+    padding      : 0.3% 1%;
+    line-height  : 30px;
+    box-sizing   : border-box;
+    border-radius: 7px;
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : large;
+    text-align   : center;
+}
+
+.tableContainer .table td:hover {
+    background: #ffffff;
+    color     : #555151;
+    border    : 1px solid #000000;
+}
+
+.tableContainer .table .serial {
+    background: #F7F7F7;
+}
+
+.tableContainer .table td i {
+    font-size : 2.2vh;
+    cursor    : pointer;
+    transition: 0.2s;
+}
+
+.tableContainer .table td i:hover {
+    transform : scale(0.8);
+    transition: 0.2s;
+}
+
+.tableContainer .table td .fa-trash-alt {
+    color: #d43636;
+}
+
+.tableContainer .table td .fa-edit {
+    color: #6e6060;
+}
+
+.regMain {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+    margin         : 3% auto;
+}
+
+.regMain .top {
+    font-size  : 6vh;
+    text-shadow: 0 0 0.6vh red, 0 0 0.3vh yellow, 0 0 0.15vh #fff;
+}
+
+.regMain strong marquee {
+    color: #da4a4a;
+}
+
+.regMain .registrationForm {
+    position     : absolute;
+    top          : 50%;
+    transform    : translateY(-50%);
+    background   : #EEFAFF;
+    border       : 1px solid #000000;
+    border-radius: 5vh;
+    width        : max-content;
+    height       : max-content;
+    display      : flex;
+    padding      : 2% 0%;
+}
+
+.regMain .registrationForm .form {
+    margin-inline : 25vh;
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
+}
+
+.regMain .registrationForm .form form ul {
+    list-style: none;
+}
+
+.regMain .registrationForm .form form ul li {
+    display        : flex;
+    justify-content: space-between;
+    margin-block   : 2vh;
+}
+
+.regMain .registrationForm .form form ul li input {
+    width              : 20vh;
+    margin-inline-start: 2vh;
+    padding            : 0.1vh 0.5vh;
+    line-height        : 25px;
+    background         : #FFFFFF;
+    border             : 0.6px solid #000000;
+    box-sizing         : border-box;
+    border-radius      : 11px;
+}
+
+.regMain .registrationForm .form form button {
+    width        : 100%;
+    background   : #fff;
+    color        : #000;
+    border       : 1px solid;
+    box-shadow   : 0px 1px 3px rgba(0, 0, 0, 0.6);
+    line-height  : 30px;
+    border-radius: 10px;
+    font-size    : large;
+    cursor       : pointer;
+    transition   : 0.2s;
+}
+
+.regMain .registrationForm .form form button:hover {
+    transition: 0.2s;
+    transform : scale(0.9);
+    border    : solid 1px #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 720px) {
+    .regMain .registrationForm {
+        border-radius: 3vh;
+    }
+
+    .regMain .registrationForm .form {
+        margin-inline: 15vh;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .regMain .registrationForm .form {
+        margin-inline: 5vh;
+    }
+
+    .regMain .registrationForm .form form ul li {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .regMain .registrationForm .form {
+        margin-inline: 1vh;
+    }
+
+    .regMain .registrationForm .form form button {
+        width: 50%;
+    }
+
+}

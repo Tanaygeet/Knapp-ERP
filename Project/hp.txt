@@ -1,0 +1,10 @@
+Control panel username:	hp_34882863
+Control panel password:	tanay@123
+Control panel URL:	cpanel.hyperphp.com
+MySQL username	hp_34882863
+MySQL password:	tanay@123
+MySQL hostname:	sql306.hyperphp.com
+FTP username:	hp_34882863
+FTP password:	tanay@123
+Your Website URL:	http://tanaygeet-25.hyperphp.com
+website: http://hyperphp.com/

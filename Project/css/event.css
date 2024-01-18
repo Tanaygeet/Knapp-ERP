@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&family=Poppins:wght@200;400&family=Risque&family=Roboto&display=swap');
+
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: poly;
+}
+
+*::selection {
+    background: #44534757;
+    color     : #00E0FF;
+}
+
+*::-webkit-scrollbar {
+    width        : 1.5vh;
+    border-radius: 2vh;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius   : 2vh;
+    background-color: #302a2acd;
+}
+
+body {
+    background           : #fff;
+    background-size      : cover;
+    background-position  : right;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+}
+
+button {
+    cursor    : pointer;
+    transition: 0.2s linear;
+}
+
+.main {
+    position       : absolute;
+    margin         : auto;
+    top            : 50%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+    width          : 98%;
+    height         : 95vh;
+    background     : rgba(229, 247, 255, 0.65);
+    border         : 2px solid #000000;
+    box-sizing     : border-box;
+    display        : flex;
+    flex-direction : column;
+    text-align     : center;
+    justify-content: space-evenly;
+}
+
+.main h2 {
+    color      : #000000;
+    text-shadow: 0 0 1px #929292;
+}
+
+.main .eventBox {
+    max-width            : 100%;
+    max-height           : 50vh;
+    overflow-y           : auto;
+    margin               : 1vh;
+    display              : grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap           : 3%;
+    row-gap              : 6%;
+    justify-content      : center;
+    align-items          : center;
+    padding              : 2%;
+}
+
+.main .eventBox a {
+    background     : #A5E4FF;
+    border         : 3px solid #1494CA;
+    box-sizing     : border-box;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    width          : fit-content;
+    padding        : 2%;
+    color          : #000000;
+    text-decoration: none;
+}
+
+.main .eventBox a img {
+    width : 25vh;
+    margin: 0.2%;
+}
+
+.btn {
+    display        : flex;
+    justify-content: flex-end;
+    align-items    : center;
+    margin         : 5vh;
+}
+
+.btn a {
+    background     : linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 0%, rgba(54, 97, 139, 0.5) 0.01%, #001028 100%);
+    color          : #FFFFFF;
+    border         : 1px solid rgba(0, 0, 0, 0.75);
+    box-sizing     : border-box;
+    box-shadow     : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius  : 30px;
+    width          : fit-content;
+    font-weight    : normal;
+    line-height    : 48px;
+    text-decoration: none;
+    font-size      : 3vh;
+    padding        : 0 2vh;
+    transition     : 0.2s linear;
+}
+
+button:hover,
+a:hover {
+    transition: 0.2s linear;
+    transform : scale(0.9);
+}
+
+@media screen and (max-width: 1435px) {
+    .main .eventBox {
+        grid-template-columns: auto auto auto auto auto;
+        column-gap           : 2%;
+    }
+}
+
+@media screen and (max-width: 1113px) {
+    .main .eventBox {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .main .eventBox {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 664px) {
+    .main {
+        margin: 3% auto;
+    }
+
+    .main .eventBox {
+        grid-template-columns: auto auto;
+        min-height           : 65vh;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .main .eventBox {
+        grid-template-columns: auto;
+    }
+}

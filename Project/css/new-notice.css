@@ -1,0 +1,109 @@
+.regMain {
+    margin        : 3% auto;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.regMain .h2 {
+    color      : #006E90;
+    font-weight: normal;
+}
+
+.regMain .registrationForm {
+    position     : absolute;
+    top          : 50%;
+    transform    : translateY(-50%);
+    background   : #EEFAFF;
+    border       : 1px solid #000000;
+    border-radius: 3vh;
+    width        : max-content;
+    height       : max-content;
+    display      : flex;
+    padding      : 2% 0%;
+}
+
+.regMain .registrationForm .form {
+    margin-inline : 20vh;
+    display       : flex;
+    flex-direction: column;
+    font-size     : x-large;
+}
+
+.regMain .registrationForm .form textarea {
+    background        : #FFFFFF;
+    border            : 0.6px solid #000000;
+    box-sizing        : border-box;
+    border-radius     : 11px;
+    width             : 50vh;
+    max-width         : 65vh;
+    height            : 30vh;
+    max-height        : 40vh;
+    margin-block-start: 2%;
+    padding           : 2%;
+}
+
+.regMain .registrationForm .form span {
+    display    : flex;
+    align-items: center;
+    margin     : 3% 8%;
+}
+
+.regMain .registrationForm .form input {
+    background         : #FFFFFF;
+    border             : 0.6px solid #000000;
+    box-sizing         : border-box;
+    line-height        : 28px;
+    border-radius      : 10px;
+    width              : 100%;
+    margin-inline-start: 5%;
+    padding            : 1% 2%;
+}
+
+.regMain .registrationForm .form form {
+    text-align: center;
+}
+
+.regMain .registrationForm .form form button {
+    width             : 50%;
+    background        : #BEDEE9;
+    border            : 1px solid #000000;
+    color             : #000;
+    box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height       : 30px;
+    border-radius     : 10px;
+    font-size         : large;
+    cursor            : pointer;
+    transition        : 0.2s;
+    margin-block-start: 10%;
+}
+
+.regMain .registrationForm .form form button:hover {
+    transition: 0.2s;
+    transform : scale(0.9);
+    border    : solid 1px #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 720px) {
+    .regMain .registrationForm .form {
+        margin-inline: 15vh;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .regMain .registrationForm .form {
+        margin-inline: 5vh;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .regMain .registrationForm .form {
+        margin-inline: 1vh;
+    }
+
+    .regMain .registrationForm .form form button {
+        width: 50%;
+    }
+
+}

@@ -1,0 +1,65 @@
+.showContainer .allotForm .allotment {
+    width                : 100%;
+    grid-template-columns: auto auto auto;
+    justify-content      : space-between;
+}
+
+.showContainer .allotForm .tableContainer,
+.showContainer .tableContainer {
+    background        : #EEFAFF;
+    border            : 4px solid #003F63;
+    border-radius     : 23px;
+    margin-block-start: 2vh;
+    padding           : 2% 5%;
+}
+
+.showContainer .tableContainer .table {
+    background: transparent;
+    border    : 0;
+}
+
+.showContainer .tableForm .ab {
+    color: red;
+}
+
+.showContainer .tableForm .pr {
+    color: rgb(139, 210, 33);
+}
+
+.showContainer .filterForm {
+    display        : flex;
+    justify-content: flex-start;
+    padding        : 2% 5% 0;
+}
+
+.showContainer .filterForm label {
+    margin-inline: 2%;
+    color        : #003F63;
+}
+
+.showContainer .filterForm label select {
+    color        : #003F63;
+    background   : #FFFFFF;
+    border       : 1px solid #003F63;
+    box-sizing   : border-box;
+    border-radius: 9px;
+    width        : 20vh;
+    height       : 3.5vh;
+    text-align   : center;
+}
+
+.showContainer .allotForm .tableContainer .mar {
+    cursor: text;
+}
+
+.showContainer .allotForm .tableContainer .marks {
+    background   : transparent;
+    border       : none;
+    width        : 97%;
+    text-align   : center;
+    padding      : 1.5% 0;
+    border-radius: 1vh;
+}
+.showContainer .allotForm .tableContainer .marks:focus{
+    background-color: #fff;
+}
